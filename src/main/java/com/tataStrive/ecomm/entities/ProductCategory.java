@@ -3,7 +3,7 @@ package com.tataStrive.ecomm.entities;
 import jakarta.persistence.*;
 
 import java.util.Set;
-
+@Data
 @Entity
 @Table(name ="product_category")
 public class ProductCategory {
