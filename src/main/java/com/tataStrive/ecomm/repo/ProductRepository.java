@@ -10,7 +10,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(path = "products")
 public interface ProductRepository extends JpaRepository<Product,Long> {
-
+    //finding by id or  name
     Page<Product> findByCategoryId(@Param("id") Long id, Pageable pageable);
 
     Page<Product> findByNameContaining(@Param("name")String name,Pageable pageable);
